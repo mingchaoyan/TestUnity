@@ -13,7 +13,7 @@ class NonCachingLoadExample : MonoBehaviour
 			if (www.error != null)
 				throw new Exception ("WWW download had an error:" + www.error);
 			AssetBundle bundle = www.assetBundle;
-			if (AssetName == "")
+			if (AssetName == "") 
 				Instantiate (bundle.mainAsset);
 			else
 				Instantiate (bundle.Load (AssetName));
